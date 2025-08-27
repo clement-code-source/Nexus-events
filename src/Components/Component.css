@@ -1,0 +1,296 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+}
+
+
+.containerform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.completeform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 600px;
+  margin: 8% auto 8vh auto;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.start img{
+  height:24rem;
+  width: 40rem;
+  margin-bottom:5rem;
+  margin-top: 2px;
+  border: none;
+  border-color: #e4e4e3;
+  border-radius: 6rem;
+  box-shadow: 40px 40px 40px  rgb(151, 148, 148)
+  
+}
+.completeform h1 {
+  font-size: 2rem;
+  margin-bottom: 6vh;
+}
+
+
+.formnew input {
+  width: 100%;
+  max-width: 500px;
+  height: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  padding-left: 10px;
+  border: 1px solid #bbb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform:none;
+  gap: 2rem;
+  margin-top: 8%;
+  padding: 1rem;
+  
+}
+
+.servicemain h1{
+    display: flex;
+    flex-direction: column;
+    text-shadow: 10px 10px 10px #9b9494;
+    margin-top: 15%;
+    align-items: center;
+}
+
+
+
+
+.services > div {
+  padding: 1rem;
+  background-color: #eeedeb;
+  border-radius: 50%;
+  padding: 2rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+.ourwork {
+  background-color: #eaeae6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 4rem;
+  margin-top: 12%;
+}
+
+.ourwork h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+
+.project1, .project2, .project3 {
+  background-color: #f8f5f0;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  text-align: center;
+  gap: 2rem;
+}
+
+.project1 img,
+.project2 img,
+.project3 img {
+  max-width: 80%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+
+.p1title, .p2title, .p3title {
+  text-align: left;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.client1, .client2 {
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 7rem;
+  max-width: 250px;
+  height: 250px; 
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(92, 90, 90, 0.2);
+}
+.client1 h3{
+  margin-top: 3rem;
+}
+
+
+.client2 h3{
+  margin-top: 3rem;
+}
+.clientheading{
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    margin-left: 4rem;
+    text-decoration:underline;
+}
+.client{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+
+.client1:hover .flip-card-inner,
+.client2:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.client1front, .client1back,
+.client2front, .client2back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.client1back, .client2back {
+  background-color: #0077cc;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.clientimage1{
+    width: 20%;
+    height: 70%;
+    padding:1rem;
+    border-radius: 4rem ;
+}
+
+
+
+
+.clientimage2{
+    width: 20%;
+    height: 70%;
+    padding:1rem;
+    border-radius: 4rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .completeform {
+    width: 95%;
+    padding: 1rem;
+  
+  
+  }
+  .clientimage1{
+    width: 20%;
+    height: 70%;
+    padding:1rem;
+    border-radius: 4rem ;
+}
+
+
+
+
+.clientimage2{
+    width: 20%;
+    height: 70%;
+    padding:1rem;
+    border-radius: 4rem;
+}
+
+
+  
+  }
+  .formnew input {
+    max-width: 100%;
+    height: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ourwork {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .client {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project1, .project2, .project3,
+  .client1, .client2 {
+    max-width: 50%;
+  }
+
+.submit{
+  background-color: #eaeae6;
+  color: rgb(7, 7, 7);
+  font-weight: bolder;
+  height: auto;
+  max-width: 5rem;
+  border-radius: 2rem;
+  border-color:#f6f6f6;
+}
+.submit:hover{
+  background-color: #f8f5f0;
+}
